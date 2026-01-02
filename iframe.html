@@ -14,6 +14,11 @@
         height: 100%;
         border: none;
     }
+    @media (max-width: 768px) {
+      .custom-carousel-wrapper {
+         height: 400px; /* 手機版通常需要矮一點，避免佔滿整個螢幕 */
+      }
+    }
     </style>
 </head>
 <body>
@@ -35,7 +40,7 @@
         // 假設你的輪播圖比例是 16:9 加上下方文字空間
         // 你可以根據實際內容調整這個數值 (例如 1.2 是寬度的 1.2 倍高)
         const width = iframe.offsetWidth;
-        iframe.style.height = (width * 0.8) + "px"; 
+        iframe.style.height = (width * 1.2) + "px"; 
         }
     }
 
